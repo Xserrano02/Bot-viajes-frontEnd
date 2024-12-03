@@ -1,38 +1,68 @@
 .App {
+  font-family: Arial, sans-serif;
+  max-width: 600px;
+  margin: 0 auto;
+}
+
+.chat-window {
+  border: 1px solid #ccc;
+  height: 300px;
+  overflow-y: scroll;
+  padding: 10px;
+  background-color: #f9f9f9;
+}
+
+.message {
+  margin: 10px 0;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.message.bot {
+  background-color: #e1f5fe;
+  text-align: left;
+}
+
+.message.user {
+  background-color: #c8e6c9;
+  text-align: right;
+}
+
+.loading {
   text-align: center;
+  font-size: 16px;
+  margin: 10px 0;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.flights-container {
+  margin-top: 20px;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.flight-card {
+  border: 1px solid #ccc;
+  padding: 10px;
+  margin-bottom: 10px;
+  border-radius: 5px;
+  background-color: #fff;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.flight-card p {
+  margin: 5px 0;
+}
+
+.input-area {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  margin-top: 10px;
 }
 
-.App-link {
-  color: #61dafb;
+.input-area input {
+  flex: 1;
+  padding: 10px;
+  font-size: 16px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.input-area button {
+  padding: 10px 20px;
+  font-size: 16px;
 }
